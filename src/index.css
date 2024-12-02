@@ -1,0 +1,156 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #141E30, #243B55);
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* App Container */
+.App {
+  padding: 20px;
+}
+
+/* Modal Overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: scale-up 0.5s ease;
+  position: relative;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #e50914;
+}
+
+/* Input Box */
+input {
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b20710;
+}
+
+/* Message Feedback */
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Game Feedback Colors */
+p.red {
+  color: red;
+}
+p.green {
+  color: green;
+}
+p.blue {
+  color: blue;
+}
+
+/* Score Indicator */
+.score {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Box Styles for Visualizing Revealer, Input, Suggestion */
+.box {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  animation: glowing 2s infinite;
+}
+
+/* Animations */
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #fff;
+  }
+  50% {
+    box-shadow: 0 0 20px #e50914, 0 0 30px #e50914;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff;
+  }
+}
+
+/* Score Color Transitions */
+.green-light {
+  box-shadow: 0 0 20px green;
+}
+.blue-light {
+  box-shadow: 0 0 20px blue;
+}
+.red-light {
+  box-shadow: 0 0 20px red;
+}
+
+/* Modal Animation */
+@keyframes scale-up {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
